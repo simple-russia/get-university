@@ -1,8 +1,8 @@
 import { App } from './App';
-import ReactDOM from 'react-dom';
+import * as ReactDOMClient from 'react-dom/client';
 
 const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
+const root = ReactDOMClient.createRoot(container);
 
 const AppComponent = (<App />);
 

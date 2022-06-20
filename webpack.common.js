@@ -1,7 +1,7 @@
 const path = require('path');
-const HtmlWebpackPluhin = require('html-webpack-plugin');
 const dotenv = require('dotenv');
 const { DefinePlugin } = require('webpack');
+const HtmlWebpackPluhin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
