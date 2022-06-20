@@ -1,0 +1,38 @@
+{
+  "name": "getuni",
+  "version": "1.0.0",
+  "description": "📖 Get university by name",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-locally": "webpack-dev-server --config webpack.dev.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simple-russia/get-university.git"
+  },
+  "keywords": [],
+  "author": "Alexei Isaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simple-russia/get-university/issues"
+  },
+  "homepage": "https://github.com/simple-russia/get-university#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "babel-loader": "^8.2.5",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1"
+  }
+}
