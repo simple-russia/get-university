@@ -22,7 +22,7 @@ module.exports = {
       {
         test: /\.jsx?$/i,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ['babel-loader', 'eslint-loader'],
       },
       {
         test: /\.tsx?$/i,
