@@ -3,7 +3,7 @@ const HtmlWebpackPluhin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: { import: './src/index.js' },
+    main: { import: './src/index.tsx' },
   },
   output: {
     filename: '[name].[fullhash].js',
@@ -21,6 +21,11 @@ module.exports = {
         test: /\.jsx?$/i,
         exclude: /node_modules/,
         use: ['babel-loader'],
+      },
+      {
+        test: /\.tsx?$/i,
+        exclude: /node_modules/,
+        use: ['ts-loader'],
       },
     ],
   },
