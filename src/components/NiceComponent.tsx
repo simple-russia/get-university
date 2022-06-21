@@ -10,6 +10,7 @@ const NiceComponent = ({}: NiceComponentProps): JSX.Element => {
       another commit
       {'git 2nd branch :>'}
       {'git 2nd branch :> x2'}
+      {'git 2nd branch :> x3'}
     </div>
   );
 };
