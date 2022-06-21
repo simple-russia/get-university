@@ -7,6 +7,7 @@ const NiceComponent = ({}: NiceComponentProps): JSX.Element => {
     <div>
       This is some nice component
       and lil bit more :)
+      another commit
     </div>
   );
 };
