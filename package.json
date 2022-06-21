@@ -4,19 +4,10 @@
   "description": "📖 Get university by name",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start-locally": "webpack-dev-server --config webpack.dev.js --open"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "ling-staged": {
-    "*.js": [
-      "nim run lint:fix",
-      "git add"
-    ]
+    "start-locally": "webpack-dev-server --config webpack.dev.js --open",
+    "prepare": "husky install",
+    "lint": "eslint ./src/*",
+    "husky": "node ./node_modules/husky/lib/bin.js"
   },
   "repository": {
     "type": "git",
