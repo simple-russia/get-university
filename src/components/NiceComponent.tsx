@@ -11,6 +11,7 @@ const NiceComponent = ({}: NiceComponentProps): JSX.Element => {
       {'git 2nd branch :>'}
       {'git 2nd branch :> x2'}
       {'git 2nd branch :> x3'}
+      {'git 2nd branch :> x4'}
     </div>
   );
 };
