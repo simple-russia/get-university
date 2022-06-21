@@ -3,7 +3,7 @@
         "browser": true,
         "es2021": true
     },
-    "ignorePatterns": ["webpack.*.js", "package*.json", "tsconfig.json"],
+    "ignorePatterns": ["webpack.*.js", "package*.json", "tsconfig.json", ".*css"],
     "extends": [
         "plugin:react/recommended",
         "google"
