@@ -1,3 +1,13 @@
 {
-    "extends": "stylelint-config-standard"
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-standard-scss"
+    ],
+    "stylelint.validate": ["css", "scss"],
+    "plugins": [
+        "stylelint-scss"
+    ],
+    "rules": {
+        "indentation": 4
+    }
 }
