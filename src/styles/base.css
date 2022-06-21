@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: var(--main-color);
+    font-family: Arial;
+    color: var(--main-text-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+img {
+    user-select: none;
+}
+
+button {
+    user-select: none;
+}

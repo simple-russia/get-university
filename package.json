@@ -6,8 +6,8 @@
   "scripts": {
     "start-locally": "webpack-dev-server --config webpack.dev.js --open",
     "prepare": "husky install",
-    "lint": "eslint ./src/*",
-    "stylelint": "stylelint \"./src/*.*css\"",
+    "lint": "eslint \"src/*/*.{ts,js,tsx,jsx}\"",
+    "stylelint": "stylelint \"src/**/*.{css,scss,sass}\"",
     "husky": "node ./node_modules/husky/lib/bin.js"
   },
   "repository": {

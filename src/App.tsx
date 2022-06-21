@@ -1,7 +1,7 @@
 import React from 'react';
 import D from '../lang/en/global.json';
-import './styles.css';
-import './cooler_styles.scss';
+import './styles/base.css';
+import './styles/variables.css';
 
 const Tim = 4;
 console.log(Tim);

@@ -3,6 +3,8 @@
         "stylelint-config-standard"
     ],
     "rules": {
-        "indentation": 4
+        "indentation": 4,
+        "font-family-no-missing-generic-family-keyword": null,
+        "custom-property-empty-line-before": null
     }
 }
