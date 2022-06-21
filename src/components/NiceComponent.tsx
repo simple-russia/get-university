@@ -8,6 +8,7 @@ const NiceComponent = ({}: NiceComponentProps): JSX.Element => {
       This is some nice component
       and lil bit more :)
       another commit
+      {'git 2nd branch :>'}
     </div>
   );
 };
