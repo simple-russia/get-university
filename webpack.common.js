@@ -2,6 +2,7 @@ const path = require('path');
 const dotenv = require('dotenv');
 const { DefinePlugin } = require('webpack');
 const HtmlWebpackPluhin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
@@ -30,6 +31,10 @@ module.exports = {
         exclude: /node_modules/,
         use: ['ts-loader'],
       },
+      {
+        test: /\.s?css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
     ],
   },
   plugins: [
@@ -41,6 +46,9 @@ module.exports = {
     }),
     new ESLintPlugin({
       extensions: ['.js', '.ts', '.jsx', '.tsx'],
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash].css',
     }),
   ],
 };

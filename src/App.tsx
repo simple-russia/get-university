@@ -1,5 +1,7 @@
 import React from 'react';
 import D from '../lang/en/global.json';
+import './styles.css';
+import './cooler_styles.scss';
 
 const Tim = 4;
 console.log(Tim);
