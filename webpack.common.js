@@ -2,6 +2,7 @@ const path = require('path');
 const dotenv = require('dotenv');
 const { DefinePlugin } = require('webpack');
 const HtmlWebpackPluhin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -22,7 +23,7 @@ module.exports = {
       {
         test: /\.jsx?$/i,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader'],
       },
       {
         test: /\.tsx?$/i,
@@ -37,6 +38,9 @@ module.exports = {
     }),
     new DefinePlugin({
       'process.env': JSON.stringify(dotenv.config().parsed),
+    }),
+    new ESLintPlugin({
+      extensions: ['.js', '.ts', '.jsx', '.tsx'],
     }),
   ],
 };

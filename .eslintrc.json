@@ -1,26 +1,26 @@
 {
-    "env": { // environments ig
+    "env": {
         "browser": true,
         "es2021": true
     },
-    "ignorePatterns": ["webpack.*.js", "package*.json", "tsconfig.json"], // ignore files
-    "extends": [ // using presets of standard eslint rules  
+    "ignorePatterns": ["webpack.*.js", "package*.json", "tsconfig.json"],
+    "extends": [
         "plugin:react/recommended",
         "google"
     ],
-    "parser": "@typescript-eslint/parser", // ???
-    "parserOptions": { // ???
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
         "ecmaFeatures": {
-            // "jsx": true
+            "jsx": true
         },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": [ // they add more special rules for ESlint
+    "plugins": [
         "react",
         "@typescript-eslint"
     ],
-    "rules": { // using standard ESLint rules
+    "rules": {
         "no-var": "error",
         "linebreak-style": 0
     }
