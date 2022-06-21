@@ -6,6 +6,7 @@ const NiceComponent = ({}: NiceComponentProps): JSX.Element => {
   return (
     <div>
       This is some nice component
+      and lil bit more :)
     </div>
   );
 };
