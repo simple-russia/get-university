@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tim = 4;
-console.log(Tim)
+console.log(Tim);
 
 
 const App = () => {
