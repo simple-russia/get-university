@@ -1,4 +1,5 @@
 import React from 'react';
+import D from '../lang/en/global.json';
 
 const Tim = 4;
 console.log(Tim);
@@ -6,7 +7,7 @@ console.log(Tim);
 
 const App = () => {
   console.log(process.env.PORT);
-  return <p>hi wordlee</p>;
+  return <p>{D.home.main_paragraph}</p>;
 };
 
 export {App};
