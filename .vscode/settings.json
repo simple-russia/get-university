@@ -1,0 +1,12 @@
+{
+    "scss.validate": false,
+    "css.validate": false,
+    "less.validate": false,
+    "[css]": {
+        "editor.tabSize": 4
+    }
+  
+    // "editor.codeActionsOnSave": {
+    //   "source.fixAll.stylelint": true
+    // },
+}
