@@ -9,6 +9,7 @@ const NiceComponent = ({}: NiceComponentProps): JSX.Element => {
       and lil bit more :)
       another commit
       {'git 2nd branch :>'}
+      {'git 2nd branch :> x2'}
     </div>
   );
 };
