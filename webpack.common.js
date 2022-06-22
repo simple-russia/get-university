@@ -18,6 +18,7 @@ module.exports = {
     alias: {
       src: path.resolve(__dirname, 'src/'),
       lang: path.resolve(__dirname, 'lang/'),
+      public: path.resolve(__dirname, 'public/'),
     },
   },
   module: {
@@ -35,6 +36,10 @@ module.exports = {
       {
         test: /\.s?css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(png|jpg|svg)$/i,
+        type: 'asset/resource',
       },
     ],
   },

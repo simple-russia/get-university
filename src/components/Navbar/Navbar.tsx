@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './navbar.module.css';
+import Logo from 'public/assets/images/logo.png';
 
 interface NavbarProps {}
 
@@ -7,6 +8,7 @@ const Navbar = ({}: NavbarProps): JSX.Element => {
   return (
     <nav className={styles.main}>
       Navbar
+      <img src={Logo} />
     </nav>
   );
 };
