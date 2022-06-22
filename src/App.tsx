@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Layout } from '../src/components/Layout';
-import { Navbar } from 'src/components/Navbar';
+import { Layout, Navbar, Main } from 'src/components';
 
 import Texts from 'lang/en/global.json';
 import './styles/base.css';
@@ -12,6 +11,7 @@ const App = () => {
   return (
     <Layout name="dimitri">
       <Navbar />
+      <Main />
       <p>{Texts.home.main_paragraph}</p>
     </Layout>
   );
