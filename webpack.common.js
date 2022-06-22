@@ -41,6 +41,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPluhin({
       template: 'public/index.html',
+      favicon: 'public/favicon.ico',
     }),
     new DefinePlugin({
       'process.env': JSON.stringify(dotenv.config().parsed),
