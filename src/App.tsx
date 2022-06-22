@@ -1,4 +1,5 @@
 import React from 'react';
+import {Layout} from './components/Layout';
 import Texts from 'lang/en/global.json';
 import './styles/base.css';
 import './styles/variables.css';
@@ -8,10 +9,11 @@ console.log(Tim);
 
 
 const App = () => {
-  console.log(process.env.PORT);
-  return <>
-    <p>{Texts.home.main_paragraph}</p>
-  </>;
+  return (
+    <Layout>
+      <p>{Texts.home.main_paragraph}</p>
+    </Layout>
+  );
 };
 
 export {App};
