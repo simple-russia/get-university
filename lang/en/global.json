@@ -1,6 +1,7 @@
 {
     "home": {
         "title": "Univercity search",
-        "main_paragraph": "This website makes it easy for you to find a univercity by name. Some clean github commit:)"
+        "main_paragraph": "This website makes it easy for you to find a univercity by name. Some clean github commit:)",
+        "search_button_text": "search"
     }
 }

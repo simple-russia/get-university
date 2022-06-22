@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
+import styles from './searchpage.module.css';
 import Texts from 'lang/en/global.json';
 
 interface SearchPageProps {}
@@ -11,14 +12,15 @@ const SearchPage = ({}: SearchPageProps): JSX.Element => {
     setSearchString(target.value);
   };
 
-  useEffect( () => {
-    console.log(searchString);
-  }, [searchString]);
-
   return (
-    <div>
-      <input value={searchString} onChange={onSearchStringInput}></input>
-      {Texts.home.main_paragraph}
+    <div className={styles.main}>
+      <p className={styles.home_paragraph}>
+        {Texts.home.main_paragraph}
+      </p>
+      <div className={styles.search_block}>
+        <input placeholder='Enter the univercity name' className={styles.search_input} value={searchString} onChange={onSearchStringInput}></input>
+        <button className={styles.search_button}>{Texts.home.search_button_text}</button>
+      </div>
     </div>
   );
 };

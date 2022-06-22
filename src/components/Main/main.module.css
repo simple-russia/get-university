@@ -1,6 +1,10 @@
 .main {
     width: min(800px, 100vw);
-    height: 200px;
+    height: calc(100vh - var(--navbar-height));
     margin: auto;
-    background-color: red;
+    padding: 40px;
+    box-sizing: border-box;
+    background-image: linear-gradient(var(--main-bg-color-50), var(--main-bg-color-30));
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 70px 7px rgba(0, 0, 0, 30%);
 }

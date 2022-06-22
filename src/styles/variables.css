@@ -1,14 +1,36 @@
 :root {
     /* general */
     --navbar-height: 60px;
+    --arial: arial;
+    --font-size-xxl: 28px;
+    --font-size-lg: 24px;
+    --font-size-md: 18px;
+    --fomt-size-sm: 14px;
 
     /* colors */
     --light-grey: rgb(234, 220, 212);
     --dark-grey: rgb(103, 73, 52);
+    --light-grey-50: rgba(234, 220, 212, 100%);
+    --light-grey-30: rgba(234, 220, 212, 95%);
+
+    --red-1: rgb(212, 116, 100);
 }
 
 :root {
     /* objects' color */
     --main-border-color: var(--dark-grey);
     --main-bg-color: var(--light-grey);
+    --main-bg-color-50: var(--light-grey-50);
+    --main-bg-color-30: var(--light-grey-30);
+
+    --main-button-bg-color: var(--red-1);
+    --main-button-text-color: white;
+}
+
+body {
+    font-family: var(--arial);
+    font-size: var(--font-size-md);
+
+    background-image: url("public/assets/images/bgpattern.png");
+    background-size: 200px;
 }

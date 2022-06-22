@@ -1,0 +1,39 @@
+.main {
+    display: block;
+}
+
+.home_paragraph {
+    font-size: var(--font-size-xxl);
+    margin-bottom: 30px;
+}
+
+.search_input {
+    display: block;
+    height: 100%;
+    font-size: var(--font-size-md);
+    padding: 0 20px;
+}
+
+.search_button {
+    display: block;
+    height: 100%;
+    font-size: var(--font-size-md);
+    cursor: pointer;
+    background-color: var(--main-button-bg-color);
+    color: var(--main-button-text-color);
+}
+
+.search_button:hover {
+    filter: brightness(0.95);
+}
+
+.search_button:active {
+    filter: brightness(0.85);
+}
+
+.search_block {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    width: 100%;
+    height: 50px;
+}
