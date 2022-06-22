@@ -1,8 +1,5 @@
 import React from 'react';
-
-import { Layout, Navbar, Main } from 'src/components';
-
-import Texts from 'lang/en/global.json';
+import { Layout, Navbar, Main, SearchPage } from 'src/components';
 import './styles/base.css';
 import './styles/variables.css';
 
@@ -11,8 +8,9 @@ const App = () => {
   return (
     <Layout name="dimitri">
       <Navbar />
-      <Main />
-      <p>{Texts.home.main_paragraph}</p>
+      <Main>
+        <SearchPage />
+      </Main>
     </Layout>
   );
 };
