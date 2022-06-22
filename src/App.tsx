@@ -1,5 +1,5 @@
 import React from 'react';
-import Texts from '../lang/en/global.json';
+import Texts from 'lang/en/global.json';
 import './styles/base.css';
 import './styles/variables.css';
 
