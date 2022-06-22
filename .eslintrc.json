@@ -28,6 +28,8 @@
     "rules": {
         "no-var": "error",
         "linebreak-style": 0,
-        "object-curly-spacing": "off"
+        "object-curly-spacing": "off",
+        "indent": 0,
+        "max-len": "off"
     }
 }
