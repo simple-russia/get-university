@@ -6,6 +6,8 @@
         "indentation": 4,
         "font-family-no-missing-generic-family-keyword": null,
         "custom-property-empty-line-before": null,
-        "declaration-empty-line-before": null
+        "declaration-empty-line-before": null,
+        "no-duplicate-selectors": null,
+        "color-function-notation": "legacy"
     }
 }

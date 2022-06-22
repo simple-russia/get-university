@@ -7,8 +7,7 @@ interface NavbarProps {}
 const Navbar = ({}: NavbarProps): JSX.Element => {
   return (
     <nav className={styles.main}>
-      Navbar
-      <img src={Logo} />
+      <img className={styles.logo} src={Logo} />
     </nav>
   );
 };

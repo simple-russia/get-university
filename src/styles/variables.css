@@ -1,9 +1,14 @@
 :root {
+    /* general */
     --navbar-height: 60px;
 
     /* colors */
-    --grey-1: grey;
+    --light-grey: rgb(234, 220, 212);
+    --dark-grey: rgb(103, 73, 52);
+}
 
+:root {
     /* objects' color */
-    --border: var(--border);
+    --main-border-color: var(--dark-grey);
+    --main-bg-color: var(--light-grey);
 }
