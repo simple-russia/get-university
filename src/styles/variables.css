@@ -1,5 +1,9 @@
 :root {
+    --navbar-height: 60px;
+
+    /* colors */
     --grey-1: grey;
 
+    /* objects' color */
     --border: var(--border);
 }
