@@ -1,7 +1,7 @@
 const UNIVERCITIES_REQUESTED = 'UNIVERCITY_REQUESTED';
 type unisRequestedStateType = object[];
-const AddUniversities = (univercityList: unisRequestedStateType) => ({type: UNIVERCITIES_REQUESTED, payload: univercityList});
-type actions = ReturnType<typeof AddUniversities>
+const addUniversities = (univercityList: unisRequestedStateType) => ({type: UNIVERCITIES_REQUESTED, payload: univercityList});
+type actions = ReturnType<typeof addUniversities>
 
 const initialState: unisRequestedStateType = [];
 
@@ -12,4 +12,4 @@ const getUniReducer = (state = initialState, action: actions) => {
     return state;
 };
 
-export { getUniReducer, AddUniversities };
+export { getUniReducer, addUniversities };

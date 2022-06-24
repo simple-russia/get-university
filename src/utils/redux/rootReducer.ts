@@ -6,4 +6,6 @@ const rootReducer = combineReducers({
     requestedUnivercities: getUniReducer,
 });
 
-export { rootReducer };
+type rootReducerType = ReturnType<typeof rootReducer>;
+
+export { rootReducer, rootReducerType };
