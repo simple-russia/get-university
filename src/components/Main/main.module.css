@@ -1,6 +1,6 @@
 .main {
     width: min(800px, 100vw);
-    height: calc(100vh - var(--navbar-height));
+    min-height: calc(100vh - var(--navbar-height));
     margin: auto;
     padding: 40px;
     box-sizing: border-box;

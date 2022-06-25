@@ -6,7 +6,6 @@ import { addUniversities } from '../reducers/getUniReducer';
 const getUnisThunk = (univercityName: string):
     ThunkAction<void, rootReducerType, unknown, any> => async (dispatch) => {
         const data = await getUniAPI(univercityName);
-        console.log('data is =', data);
         dispatch(addUniversities(data));
 };
 

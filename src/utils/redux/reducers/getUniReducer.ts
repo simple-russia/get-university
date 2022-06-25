@@ -12,7 +12,8 @@ const initialState: unisRequestedStateType = {
 
 const getUniReducer = (state = initialState, action: actions) => {
     if (action.type === UNIVERCITIES_REQUESTED) {
-        return {...state, action};
+        const data = action.payload;
+        return {...state, univercities: data};
     };
     return state;
 };
