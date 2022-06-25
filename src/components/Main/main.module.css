@@ -1,5 +1,5 @@
 .main {
-    width: min(800px, 100vw);
+    width: min(800px, 100%);
     min-height: calc(100vh - var(--navbar-height));
     margin: auto;
     padding: 40px;
