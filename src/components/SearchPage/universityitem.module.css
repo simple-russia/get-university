@@ -1,0 +1,17 @@
+.main {
+    background-color: #fff0e7;
+    padding: 15px;
+    outline: 1px solid #af8781;
+
+    display: grid;
+    grid-template-columns: 1fr 90px;
+}
+
+.main > span {
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 20px;
+    box-sizing: border-box;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './universityitem.module.css';
 
 interface UniversityItemProps {
     name: string,
@@ -7,9 +8,9 @@ interface UniversityItemProps {
 
 const UniversityItem = (props: UniversityItemProps): JSX.Element => {
   return (
-    <div>
+    <div className={styles.main}>
       <span>{props.name}</span>
-      <a href={props.web_pages[0]}>Site</a>
+      <a href={props.web_pages[0]}>Visit site</a>
     </div>
   );
 };
