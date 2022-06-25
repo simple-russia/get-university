@@ -1,14 +1,21 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './searchpage.module.css';
 import Texts from 'lang/en/global.json';
-import { useDispatch } from 'react-redux';
-import { getUnisThunk } from 'src/utils/redux/thunk/getUnisThunk';
+import { useDispatch, useSelector } from 'react-redux';
+import { getUnisThunk } from 'src/utils/redux/thunks/getUnisThunk';
+import { rootReducerType } from 'src/utils/redux/rootReducer';
 
 interface SearchPageProps {}
 
 const SearchPage = ({}: SearchPageProps): JSX.Element => {
   const [searchString, setSearchString] = useState<string>('');
   const dispatch: any = useDispatch();
+
+  const univercityList = useSelector((state: rootReducerType) => state.requestedUnivercities);
+
+  useEffect( () => {
+    console.log(univercityList);
+  }, [univercityList]);
 
   const onSearchStringInput = (event: React.FormEvent<EventTarget>): void => {
     const target = event.target as HTMLInputElement;
